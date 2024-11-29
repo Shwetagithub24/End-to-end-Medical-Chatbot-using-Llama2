@@ -1,14 +1,14 @@
 ## This project implements a modular Retrieval-Augmented Generation (RAG) pipeline for a Q&A chatbot designed specifically for answering medical-related queries. The system leverages Llama2 for language generation and integrates a retrieval mechanism for enhanced contextual accuracy.
 
 ## Features
-## Retrieval-Augmented Generation (RAG): Combines retrieval from a knowledge base with generative responses.
-## Modular Design: All components are modularized for clarity, scalability, and maintainability.
-## Custom Embeddings: Generates embeddings for medical documents for efficient search.
-## Web Interface: Provides a user-friendly web interface for interaction.
-## Open Source: Ready-to-extend framework for custom use cases.
+- Retrieval-Augmented Generation (RAG): Combines retrieval from a knowledge base with generative responses.
+- Modular Design: All components are modularized for clarity, scalability, and maintainability.
+- Custom Embeddings: Generates embeddings for medical documents for efficient search.
+- Web Interface: Provides a user-friendly web interface for interaction.
+- Open Source: Ready-to-extend framework for custom use cases.
 
 ## Folder Structure
-## This project follows a modular approach for cleaner and more maintainable code, as evident in the directory structure:
+This project follows a modular approach for cleaner and more maintainable code, as evident in the directory structure:
 .
 ├── data                    # Stores input documents (medical texts or PDFs)
 ├── model                   # Contains pre-trained and fine-tuned models
@@ -25,39 +25,38 @@
 └── README.md               # Project documentation
 
 ## Workflow
-## 1. Data Ingestion: Loads and preprocesses medical documents.
-## 2. Embedding Generation: Converts documents into dense vector representations for retrieval.
-## 3. RAG Pipeline:
-##  - Retrieval: Fetches relevant documents using embeddings.
-##  - Generation: Llama2 generates contextually accurate responses.
-## 4. Web Interface: Users can interact with the chatbot via a web-based UI.
+1. Data Ingestion: Loads and preprocesses medical documents.
+2. Embedding Generation: Converts documents into dense vector representations for retrieval.
+3. RAG Pipeline:
+   - Retrieval: Fetches relevant documents using embeddings.
+   - Generation: Llama2 generates contextually accurate responses.
+4. Web Interface: Users can interact with the chatbot via a web-based UI.
 
 
 ## Modular Design
-## The codebase is designed to ensure modularity, with separate files for each component:
+The codebase is designed to ensure modularity, with separate files for each component:
 
 ## helper.py:
-## - Contains utility functions for data loading and preprocessing.
-## - Handles embedding generation and storage.
+ - Contains utility functions for data loading and preprocessing.
+ - Handles embedding generation and storage.
 
 ## executor.py:
-## - Combines retrieval and generation steps.
-## - Implements the RAG pipeline.
+ - Combines retrieval and generation steps.
+ - Implements the RAG pipeline.
 
 ## prompt.py:
-## - Defines structured prompts for Llama2 to ensure consistent and accurate responses.
+ - Defines structured prompts for Llama2 to ensure consistent and accurate responses.
 
 ## app.py:
-## - Connects all components to create a Flask-based web application
+ - Connects all components to create a Flask-based web application
 
 ## Overview
-
-### This repository provides a walkthrough for building a chatbot with the following components:
-### Document Loading: Extracts content from a directory of PDFs.
-### Text Splitting: Prepares the text for embeddings.
-### Embeddings: Generates dense vector representations using HuggingFace models.
-### Vector Indexing: Stores and queries data efficiently with Pinecone.
-### Language Model: Llama 2, integrated through LangChain and Transformers.
+ This repository provides a walkthrough for building a chatbot with the following components:
+- Document Loading: Extracts content from a directory of PDFs.
+- Text Splitting: Prepares the text for embeddings.
+- Embeddings: Generates dense vector representations using HuggingFace models.
+- Vector Indexing: Stores and queries data efficiently with Pinecone.
+- Language Model: Llama 2, integrated through LangChain and Transformers.
 
 ### Resources:
 - [LLaMA](https://github.com/meta-llama)
