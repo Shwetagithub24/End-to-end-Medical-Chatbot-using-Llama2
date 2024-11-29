@@ -10,19 +10,19 @@
 ## Folder Structure
 This project follows a modular approach for cleaner and more maintainable code, as evident in the directory structure:
 .
-├── data                    # Stores input documents (medical texts or PDFs)
-├── model                   # Contains pre-trained and fine-tuned models
-├── src                     # Core modules of the application
-│   ├── app.py              # Main application logic
-│   ├── helper.py           # Utility functions (e.g., file handling, data preprocessing)
-│   ├── executor.py         # Executes RAG pipeline (retrieval + generation)
-│   ├── prompt.py           # Defines prompt templates for Llama2
-├── static                  # Static files (CSS/JS for web interface)
-├── templates               # HTML templates for Flask web app
-├── trails.ipynb            # Jupyter notebook for prototyping and experiments
-├── requirements.txt        # Python dependencies
-├── .env                    # Environment variables (e.g., API keys, secrets)
-└── README.md               # Project documentation
+```├── data                    # Stores input documents (medical texts or PDFs)
+```├── model                   # Contains pre-trained and fine-tuned models
+```├── src                     # Core modules of the application
+```│   ├── app.py              # Main application logic
+```│   ├── helper.py           # Utility functions (e.g., file handling, data preprocessing)
+```│   ├── executor.py         # Executes RAG pipeline (retrieval + generation)
+```│   ├── prompt.py           # Defines prompt templates for Llama2
+```├── static                  # Static files (CSS/JS for web interface)
+```├── templates               # HTML templates for Flask web app
+```├── trails.ipynb            # Jupyter notebook for prototyping and experiments
+```├── requirements.txt        # Python dependencies
+```├── .env                    # Environment variables (e.g., API keys, secrets)
+```└── README.md               # Project documentation
 
 ## Workflow
 1. Data Ingestion: Loads and preprocesses medical documents.
