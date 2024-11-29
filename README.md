@@ -59,6 +59,11 @@ The codebase is designed to ensure modularity, with separate files for each comp
 - Vector Indexing: Stores and queries data efficiently with Pinecone.
 - Language Model: Llama 2, integrated through LangChain and Transformers.
 
+## Output and User Interface
+![output](https://github.com/user-attachments/assets/cb50d408-4a82-4160-bfbb-9fa6c23028fe)
+![UI](https://github.com/user-attachments/assets/5603d29d-bf39-4400-9d52-03d4473d746f)
+
+
 ### Resources:
 - [LLaMA](https://github.com/meta-llama)
 - [Quantized Model](https://huggingface.co/models?search=llama%202%20ggml)
